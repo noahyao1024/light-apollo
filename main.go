@@ -14,5 +14,5 @@ func main() {
 	storage.Init()
 
 	r.GET("configfiles/json/:app_id/:cluster/:namespace", handler.Configs)
-	r.Run()
+	r.Run(":80")
 }
